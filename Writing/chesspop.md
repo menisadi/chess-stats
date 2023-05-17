@@ -27,16 +27,84 @@ Before that, two small clarifications:
 3. I am using data from a few months ago for the simple reason that since the outbreak of the war in Ukraine, FIDE has imposed a boycott on Russia and for that reason many players are not registered as Russian but as stateless (and play under the FIDE flag).
 
 ## the data
-In FIDE registered, as of —-, —- players. The full FIDE player list looks like this
-(Chart)
-The first thing we want to check is how many players there are in each country:
-(Chart)
-We will sort the table from highest to lowest and get:
-(Chart)
-Unsurprisingly, Russia is at the top, —- in second place, —- right after it.
-For those who are wondering, in the last place is —- where a single player named —- is listed, his rating is —- and he is —---.
-Another index that is interesting to check is how many rabbis are registered in each country. A quick check yields the following table:
-(Chart)
+In FIDE registered, as of August 2022, 393377 players. 
+The full FIDE player list looks like this
+![FIDE table](../Figures/fide_table.png)
+
+### Making the data usable
+
+One of the main obsitcles of using this table is that FIDE uses non-conventional country codes and also includes a huge list of federations (did you know that Jersey, an Island between England and France with 100K, has its own federation? Shout out to Love Robs).
+
+This is a problem because most of population data (which we will be using later) uses more standard list of countries. So we had to merge those provincies (sorry Jersey).
+
+```python
+nieche_countries_dict = {
+    'Bosnia & Herzegovina' : 'Bosnia and Herzegovina',
+    'England' : 'United Kingdom',
+    'Wales' : 'United Kingdom',
+    'Jersey' : 'United Kingdom',
+    'Scotland' : 'United Kingdom',
+    'Antigua & Barbuda' : 'Antigua and Barbuda',
+     'Chinese Taipei' : 'China',
+     'US Virgin Islands' : 'U.S. Virgin Islands',
+     'Netherlands Antilles' : 'Netherlands',
+     'St. Vincent and the Grenadines' : 'Saint Vincent and the Grenadines',
+     'FYR Macedonia' : 'Macedonia',
+     'Trinidad & Tobago' : 'Trinidad and Tobago',
+     'Democratic Republic of Congo' : 'Zimbabwe',
+     "Côte d'Ivoire" : 'Ivory Coast',
+     'Guernsey' : 'United Kingdom',
+}
+
+def fix_some_countries(name):
+    new_name = name
+    if name in nieche_countries_dict.keys():
+        new_name = nieche_countries_dict[name]
+    return new_name
+    
+fide['country name'] = fide['country name'].apply(fix_some_countries)
+```
+
+### Back to the Analysis
+
+The first thing we want to check is how many players there are in each country.
+
+```python
+fide['country name'].value_counts().head(10)
+```
+
+Which yields
+
+| Country        | Players |
+| -------------- | ------- |
+| Russia         | 38340   |
+| India          | 36308   |
+| Germany        | 28653   |
+| Spain          | 28387   |
+| France         | 26840   |
+| Iran           | 12315   |
+| Poland         | 12243   |
+| Italy          | 11970   |
+| Turkey         | 9553    |
+| Czech Republic | 8658    |
+
+Unsurprisingly, Russia is at the top and India in second place.
+For those who are wondering, in the last place is Chad where a single player, named Mahamat Hachim Bachar,  is listed.
+Another index that is interesting to check is how many Grand-Masters are registered in each country. A quick check yields the following table:
+
+| Country                  | GMs  |
+| ------------------------ | ---- |
+| Russia                   | 208  |
+| United States of America | 106  |
+| Germany                  | 97   |
+| Ukraine                  | 90   |
+| India                    | 76   |
+| Spain                    | 57   |
+| France                   | 54   |
+| Serbia                   | 52   |
+| Hungary                  | 51   |
+| Poland                   | 50   |
+
 A final measure for now will be how many players with any titles there are in each country. In this way we can examine not only the very top but still concentrate on the professional level of the field.
 (Chart)
 A final dimension, slightly different but intriguing, is the young players. Let's try to give a glimpse of the next generation of chess by looking at players under a certain age who have already established themselves and crossed a certain ranking threshold. For this purpose, we set the maximum age to—- and the minimum rating to—- and we will accept
