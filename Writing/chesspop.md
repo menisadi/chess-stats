@@ -105,8 +105,9 @@ Another index that is interesting to check is how many Grand-Masters are registe
 | Hungary                  | 51   |
 | Poland                   | 50   |
 
-A final measure for now will be how many players with any titles there are in each country. In this way we can examine not only the very top but still concentrate on the professional level of the field.
-(Chart)
+A final measure for now will be that of female playes. When thinking about female chess playes some countries became known as dominant, such as India, Uzbekistan and China from which two players are competing at the moment on the title of  Woeld Chamption. 
+[Rewrite this paragraph]
+[(Chart)
 A final dimension, slightly different but intriguing, is the young players. Let's try to give a glimpse of the next generation of chess by looking at players under a certain age who have already established themselves and crossed a certain ranking threshold. For this purpose, we set the maximum age to—- and the minimum rating to—- and we will accept
 (Chart)
 And finally we will present the tables in a nice way on a map:
