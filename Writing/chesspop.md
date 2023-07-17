@@ -105,14 +105,28 @@ Another index that is interesting to check is how many Grand-Masters are registe
 | Hungary                  | 51   |
 | Poland                   | 50   |
 
-A final measure for now will be that of female playes. When thinking about female chess playes some countries became known as dominant, such as India, Uzbekistan and China from which two players are competing at the moment on the title of  Woeld Chamption. 
-[Rewrite this paragraph]
-[(Chart)
-A final dimension, slightly different but intriguing, is the young players. Let's try to give a glimpse of the next generation of chess by looking at players under a certain age who have already established themselves and crossed a certain ranking threshold. For this purpose, we set the maximum age to—- and the minimum rating to—- and we will accept
-(Chart)
-And finally we will present the tables in a nice way on a map:
+A final prespective, slightly different but intriguing, is the young players. Let's try to give a glimpse of the next generation of chess by looking at players under a certain age who have already established themselves and crossed a certain ranking threshold. For this purpose, we set the maximum age to 20 and the minimum rating to 2000 and we will get 
+
+| Country                  | Prodigies |
+| ------------------------ | --------- |
+| Russia                   | 272       |
+| United States of America | 202       |
+| India                    | 150       |
+| Spain                    | 147       |
+| Germany                  | 138       |
+| France                   | 130       |
+| Ukraine                  | 77        |
+| Poland                   | 75        |
+| Hungary                  | 71        |
+| Czech Republic           | 70        |
+
+No suprisies here - Russia at the top, US right after and the rising start India who just recently passed Spain.
+
+A little side note: I plan to write a separate post about women in  chess, so I'll keep the stats related to this topic for that future  post.
+
+Now, at last, we will present the tables nicely on a map:
 (maps)
-As you can see very nicely, Russia is so dominant that it destroys the scale. India is also present here, although still behind. It seems that the concepts we mentioned at the beginning are indeed anchored in the data.
+As you can see very nicely, Russia is so dominant that it skews the scale. India is also present here, although still behind. It seems that the concepts we mentioned at the beginning are indeed anchored in the data.
 But here I want to point out one small thing that was forgotten in the process - normalization.
 on the importance of normalization
   But this analysis overshadows a very important issue in data analysis and presentation: the great importance of data normalization.
