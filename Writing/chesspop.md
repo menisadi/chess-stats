@@ -33,7 +33,7 @@ The full FIDE player list looks like this
 
 ### Making the data usable
 
-One of the main obsitcles of using this table is that FIDE uses non-conventional country codes and also includes a huge list of federations (did you know that Jersey, an Island between England and France with 100K, has its own federation? Shout out to Love Robs).
+One of the main obsitcles of using this table is that FIDE uses non-conventional country codes and also includes a huge list of federations (did you know that Jersey, an Island between England and France with 100K people on it, has its own federation? Shout out to Lula Robs).
 
 This is a problem because most of population data (which we will be using later) uses more standard list of countries. So we had to merge those provincies (sorry Jersey).
 
@@ -127,36 +127,103 @@ A little side note: I plan to write a separate post about women in  chess, so I'
 Now, at last, we will present the tables nicely on a map:
 (maps)
 As you can see very nicely, Russia is so dominant that it skews the scale. India is also present here, although still behind. It seems that the concepts we mentioned at the beginning are indeed anchored in the data.
-But here I want to point out one small thing that was forgotten in the process - normalization.
-on the importance of normalization
-  But this analysis overshadows a very important issue in data analysis and presentation: the great importance of data normalization.
-Let's take for example the question "Which countries have the most internet surfers?" Probably no one will be surprised by the list. In fact, a quick glance will reveal that the list is suspiciously reminiscent of the list of "the most populated countries in the world". This phenomenon has appeared in many places, although usually in a less exaggerated and noticeable way.
-[xkcd's comic about some maps being just population mapshttps://xkcd.com/1138/].
-Sweet, this rather trivial insight, let's return to the question of "how many people play chess in each country" Would anyone be surprised that there are more chess players in Russia, a country of about two hundred million people, than in (relatively) small Norway? Well it's obvious, tell me, but there are still more players in Russia than, say, China or the USA!
-And it is very true, the coalition here between the number of residents and the number of players in the country is not perfect and not close to it, but it cannot be ignored. As in the comparison between countries, one does not look at the GDP but at the GDP per capita because it is clear that there is almost no meaning in comparing the absolute numbers between countries that differ radically in population size.
+
+But this analysis overshadows a very important issue in data analysis and presentation: the great importance of data normalization.But, here I want to point out one small thing that was forgotten in the process - normalization.
+
+## on the importance of normalization
+
+Let's take for example the question "Which countries have the most internet users?" 
+
+[table]
+
+Probably no one will be surprised by the list. In fact, a quick glance will reveal that the list is suspiciously reminiscent of the list of "the most populated countries in the world". 
+
+[table]
+
+This phenomenon has appeared in many places, although usually in a less exaggerated and noticeable way.![Heatmap](https://imgs.xkcd.com/comics/heatmap.png)
+
+[xkcd](https://xkcd.com/1138/).
+
+With this rather trivial insight, let's return to the question of "how many people play chess in each country" Would anyone be surprised that there are more chess players in Russia, a country of about two hundred million people, than in (relatively) small Norway? Well that may be obvious, I will be told now, but there are still more players in Russia than, say, China or the USA!
+And it is very true, the correlation here between the number of residents and the number of players in the country is not perfect and not close to it, but it cannot be ignored. As in the comparison between countries, one does not look at the GDP but at the GDP per capita because it is clear that there is almost no meaning in comparing the absolute numbers between countries that differ radically in population size.
 So, if you agree with me that the correct measure is not "the number of chess players" but "the number of chess players in relation to the population" the resulting picture is very different and much more interesting.
 Let's go back to data. Now we will divide all our data by the number of inhabitants of each country (and multiply by 10000 so that our own scale is more convenient) and we will get the following table:
 [Chart]
 Well, I'm sorry Iceland, but you are completely distorting the scale, so we will exclude you from the discussion (and any other country smaller than Iceland).
 [table without Iceland]
-As you can see the picture here is completely different. Suddenly the big countries disappeared and other countries emerged in their place, mainly Eastern European countries but not only. Shout out to Croatian Agdamator for being the most famous representative of Croatian chess (interestedHere is an article about chess in Croatia). Apart from Croatia, the list also stars Spain, known for their strong team (some 2-3 names), Hungary, home of Judith Folger and Richard Rapport, and of course - Norway, whose leading chess player does not need to be expanded (link to Magnus' photo).
+As you can see the picture here is completely different. Suddenly the big countries disappeared and other countries emerged in their place, mainly Eastern European countries but not only. Shout out to Croatian Agdamator for being the most famous representative of Croatian chess (interested? Here is an article about chess in Croatia). Apart from Croatia, the list also stars Spain, known for their strong team (some 2-3 names), Hungary, home of Judith Folger and Richard Rapport, and of course - Norway, whose leading chess player needs no introduction (link to Magnus' photo).
 Let's zoom out. Here is an illustration of what is happening all over the world
 [from here]
-You are welcome to scroll up a second and compare to the corresponding map before normalization. As you can see Russia has deteriorated badly not to mention the USA which is placed below almost every European country and even some countries from South America and Asia. In India the story is similar, but we will return to it later. In China, if you were wondering, the most popular board game is Go, so the index there is not very surprising.
+You are welcome to scroll up a second and compare to the corresponding map before normalization. As you can see Russia has deteriorated badly not to mention the USA which is placed below almost every European country and even some countries from South America and Asia. In India the story is similar, but we will return to it later. In China, if you were wondering, the most popular competative board game is Go, so the result there is not very surprising.
 Let's quickly make the same correction to our other metrics as well:
-[Table of many artists]
-[table of women]
-[table of child prodigies]
-How many points:
-Georgia is a women's chess powerhouse. This is not new to anyone who follows the field, but it is worth stopping for a moment and realizing that it is even more unusual than, say, female chess in China in light of the small size of Georgia - (Georgia's size and comparison to the US country)
-For a reason that is not clear to me, the number of rabbi artists in Montenegro and Serbia is unusual. Although there is not a single rabbi in these two countries who is ranked above 2700, the senior player is Alexander Fredka and he is currently ranked 49th in the world. Nevertheless, Serbia is a country of less than 7 million people and has over 50 rabbi artists! (Here is a discussion in the case of possible causes of the phenomenon)
-If in the general ranking of players Russia has fallen a little lower, in the ranking of many artists its situation is even worse. On the other hand, in women's chess, she gets back up (but not to the top).
-In the USA as of today there is only one female rabbi - the wonderful Irene Crush.
-To summarize the discussion, I decided to combine two parameters into one table to also examine the popularity (in the form of the overall number of players) at the same time as the degree of "success" (to be measured for that matter by the number of artists):
-[Graph of many artists versus actors]
-Finally - India
-Chess in India is growing massively, it's no secret (here are 3 different articles). But here the dark side of the nirmol is nicely demonstrated - it prevents more subtle insights about really large groups. India is huge, the number of its inhabitants is equal to that of the USA, Russia, Brazil, Japan and Great Britain together! The problem is that this is a country on a different scale of size. Some would argue that a more correct comparison would be to divide India (and perhaps China as well) into provinces in this analysis. Unfortunately, I do not have such information, so we have to be content only with the great chess that the young (and also the old) from India are giving us.
+[Table of gms]
+[table of pros]
+[table of prodigies]
+Some key points:
+For a reason that is not clear to me, the number of GMs in Montenegro and Serbia is unusual. Although there is not a single GM in these two countries who is ranked above 2700, the top player is Alexander Fredka and he is currently ranked 49th in the world. Nevertheless, Serbia is a country of less than 7 million people and has over 50 GMs! (Here is a discussion in the case of possible causes of the phenomenon)
+If in the general ranking of players Russia has fallen a little lower, in the ranking of GMs its situation is even worse.
+To summarize the discussion, I decided to combine two parameters into one plot to also examine the popularity (in the form of the overall number of players) at the same time as the degree of "success" (to be measured for that matter by the number of GMs):
+[Graph of Gms versus players]
+
+### Finally - India
+
+Chess in India is growing drastically, it's no secret (here are 3 different articles). In the light of our presentation we must mention that the Indian case demonstras a dark side of the normalization - it disables more subtle insights about really large groups. India is huge, the number of Indian citizens is equal to that of the USA, Russia, Brazil, Japan and Great Britain combined! The problem is that this is a country on a different scale of size. Some would argue that a more correct comparison would be to divide India (and perhaps China as well) into provinces in this analysis. Unfortunately, I do not have such information, so will have to content only with the great chess that the young (and also the old) from India are giving us.
 
 
 In the next post I will try to continue this discussion but turn the spotlight on a well-known and age-old problem in chess - the gender gap
 
+## Tables to put above
+
+| Country | GMs per $10^5$ |
+| ---- | ---- |
+| Armenia  | 1.278615 |
+| Montenegro | 1.273987 |
+| Georgia | 0.755908 |
+| Croatia  | 0.739046 |
+| Serbia | 0.600947 |
+| Hungary | 0.541314 |
+| Latvia | 0.540881 |
+| Slovenia | 0.529346 |
+| Israel | 0.526735 |
+| Bulgaria | 0.511352 |
+
+
+| Country | Titled Players per $10^5$ |
+| ---- | ---- |
+| Montenegro | 10.191894 |
+| Serbia | 7.003338 |
+| Slovenia | 6.640892 |
+| Croatia | 6.552877 |
+| Hungary | 5.142481 |
+| Armenia | 4.609743 |
+| Estonia | 4.084998 |
+| Latvia | 3.732076 |
+| Suriname | 3.518584 |
+| Georgia | 3.451979 |
+
+| Country | Players per 1000 |
+| ---- | ---- |
+| Croatia | 88.857991 |
+| Czech Republic | 79.576901 |
+| Denmark | 77.224312 |
+| Slovakia | 76.828786 |
+| Slovenia | 75.070956 |
+| Montenegro | 75.005972 |
+| Hungary | 69.569226 |
+| Norway |  68.766931 |
+| Serbia |  65.283596 |
+| Spain |   59.827725 |
+
+
+| Country | Prodigies per |
+
+Slovenia          1.203060
+Montenegro        1.114738
+Armenia           0.975785
+Estonia           0.907777
+Hungary           0.884840
+Slovakia          0.879090
+Czech Republic    0.838240
+Mongolia          0.740066
+Norway            0.707628
+Israel            0.661221
