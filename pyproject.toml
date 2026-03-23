@@ -8,6 +8,7 @@ dependencies = [
     "cufflinks>=0.17.3",
     "dash>=4.0.0",
     "geopandas>=1.1.3",
+    "lxml>=6.0.2",
     "matplotlib>=3.10.8",
     "numpy>=2.4.3",
     "pandas>=3.0.1",
