@@ -243,7 +243,3 @@ To summarize the discussion, I decided to combine two parameters into one plot t
 ### Finally - India
 
 Chess in India is growing drastically, it's no secret ([1](https://www.espn.com/chess/story/_/id/29501703/66-gms-counting-story-india-chess-surge), [2](https://www.chessbase.in/news/The-rise-of-chess-in-India)). In the light of our presentation we must mention that the Indian case demonstras a dark side of the normalization - it disables more subtle insights about really large groups. India is huge, the number of Indian citizens is equal to that of the USA, Russia, Brazil, Japan and Great Britain combined! The problem is that this is a country on a different scale of size. Some would argue that a more correct comparison would be to divide India (and perhaps China as well) into provinces in this analysis. Unfortunately, I do not have such information, so will have to content only with the great chess that the young (and also the old) from India are giving us.
-
-
-In the next post I will try to continue this discussion but turn the spotlight on a well-known and age-old problem in chess - the gender gap
-
