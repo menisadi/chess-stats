@@ -4,19 +4,19 @@ Since the broadcast of the "Queen's Gambit" series on Netflix, this ancient game
 Chess provides a perfect solution as it can be played online with people from all over the world, offering an escape from the monotony of lock-down and providing a mental challenge to players. 
 Additionally, the rise of online streaming platforms such as Twitch has made it possible for professional chess players to stream their games and provide commentary, further increasing the visibility of the game and inspiring a new generation of chess enthusiasts. 
 As a result, the popularity of chess continues to grow, with tournaments attracting large audiences and players of all skill levels coming together to enjoy this timeless game. 
-According to a [report](about:black) by the site chess.com, the world's largest site for online chess, the number of active users on the site reached 100 million users, an 238% increase from what it had two and a half years ago.
+According to a [report](https://www.chess.com/article/view/chesscom-reaches-100-million-members) by the site chess.com, the world's largest site for online chess, the number of active users on the site reached 100 million users, an 238% increase from what it had two and a half years ago.
 Anyone interested in the field notices quite quickly the prominent presence of top players of Russian origin. 
 In fact, for almost 60 years, starting from the 1940s, with the raise of  Mikhail Botvinnik, until the beginning of the 2000s at the end of Garry Kasparov's regime, the title of world champion was held only by players of Russian (or Soviet Union) origin, with the exception of a small break in the form of the phenomenal figure of the American Bobby Fisher.
 Since the beginning of the 2000s, the title has migrated to different countries such as Ukraine and Norway, but still at the top you can find many players from the red country. 
 Names like Ian Nepominachi, Sergey Kryakin, Danil Dubov and Alexander Grishchuk populate the most prestigious tournaments and produce a Russian-made team that is very hard to match. 
-All this without mentioning the fact that also in other countries, such as the United States, you can find many [Russian](danya)-[speaking](gotham) [players](who-else).
+All this without mentioning the fact that also in other countries, such as the United States, you can find many [Russian](https://www.youtube.com/watch?v=kGpA8jr_ZMg)-[speaking](https://www.youtube.com/watch?v=0wqAoopCe7Q) [players](https://www.youtube.com/watch?v=YqJ5u5cOprM).
 All these led to the perception that the world chess capital is Russia. 
 Many speculations have been made over the years regarding the reason and Russian education is [often](source) [mentioned](source) as one of the main factors that make up the great popularity of the game of kings in Russia.
 
 Another country that has made headlines in recent years in the world of chess is India. 
 A country that was not considered a prominent source of great chess players over the years, has been producing more and more excellent players in recent years.
 Starting with Anand, the world champion for the year 2007-2012, and up to the younger generation in the form of such as Gukesh, Sarin, Erigaisi and more.
-India is emerging as a rising power in the world of chess and [many](source) [articles](source2) have been written in an attempt to characterize the roots of this dramatic rise.
+India is emerging as a rising power in the world of chess and [many](https://www.espn.com/chess/story/_/id/29501703/66-gms-counting-story-india-chess-surge) [articles](https://www.chessbase.in/news/The-rise-of-chess-in-India) have been written in an attempt to characterize the roots of this dramatic rise.
 
 But, I want to be a little annoying and challenge these two perceptions. 
 To that end, let's take a look at some data.
@@ -191,7 +191,7 @@ Well, I'm sorry Iceland, but you are completely distorting the scale, so we will
 | Norway         | 68.766931        |
 | Serbia         | 65.283596        |
 | Spain          | 59.827725        |
-As you can see the picture here is completely different. Suddenly the big countries disappeared and other countries emerged in their place, mainly Eastern European countries but not only. Shout out to Croatian Agadmator for being the most famous representative of Croatian chess (interested? Here is an article about chess in Croatia). Apart from Croatia, the list also stars Spain, known for their strong team (some 2-3 names), Hungary, home of Judit Polgar and Richard Rapport, and of course - Norway, whose leading chess player needs no introduction (link to Magnus' photo).
+As you can see the picture here is completely different. Suddenly the big countries disappeared and other countries emerged in their place, mainly Eastern European countries but not only. Shout out to Croatian Agadmator for being the most famous representative of Croatian chess (interested? Here is an article about chess in Croatia). Apart from Croatia, the list also stars Spain, known for their strong team (some 2-3 names), Hungary, home of Judit Polgar and Richard Rapport, and of course - Norway, whose leading chess player needs no introduction ([![Magnus](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/World_Chess_Championship_2021%2C_game_07%2C_Magnus_Carlsen_%28cropped%29.jpg/220px-World_Chess_Championship_2021%2C_game_07%2C_Magnus_Carlsen_%28cropped%29.jpg)](https://commons.wikimedia.org/wiki/File:World_Chess_Championship_2021,_game_07,_Magnus_Carlsen_(cropped).jpg)).
 Let's zoom out. Here is an illustration of what is happening all over the world
 ![Players per capita map](../Figures/players_per_capita_map.png)
 You are welcome to scroll up a second and compare to the corresponding map before normalization. As you can see Russia has deteriorated badly not to mention the USA which is placed below almost every European country and even some countries from South America and Asia. In India the story is similar, but we will return to it later. In China, if you were wondering, the most popular competative board game is Go, so the result there is not very surprising.
@@ -242,7 +242,7 @@ To summarize the discussion, I decided to combine two parameters into one plot t
 
 ### Finally - India
 
-Chess in India is growing drastically, it's no secret (here are 3 different articles). In the light of our presentation we must mention that the Indian case demonstras a dark side of the normalization - it disables more subtle insights about really large groups. India is huge, the number of Indian citizens is equal to that of the USA, Russia, Brazil, Japan and Great Britain combined! The problem is that this is a country on a different scale of size. Some would argue that a more correct comparison would be to divide India (and perhaps China as well) into provinces in this analysis. Unfortunately, I do not have such information, so will have to content only with the great chess that the young (and also the old) from India are giving us.
+Chess in India is growing drastically, it's no secret ([1](https://www.espn.com/chess/story/_/id/29501703/66-gms-counting-story-india-chess-surge), [2](https://www.chessbase.in/news/The-rise-of-chess-in-India)). In the light of our presentation we must mention that the Indian case demonstras a dark side of the normalization - it disables more subtle insights about really large groups. India is huge, the number of Indian citizens is equal to that of the USA, Russia, Brazil, Japan and Great Britain combined! The problem is that this is a country on a different scale of size. Some would argue that a more correct comparison would be to divide India (and perhaps China as well) into provinces in this analysis. Unfortunately, I do not have such information, so will have to content only with the great chess that the young (and also the old) from India are giving us.
 
 
 In the next post I will try to continue this discussion but turn the spotlight on a well-known and age-old problem in chess - the gender gap
