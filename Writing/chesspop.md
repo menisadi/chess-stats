@@ -128,7 +128,7 @@ Now, at last, we will present the tables nicely on a map:
 (maps)
 As you can see very nicely, Russia is so dominant that it skews the scale. India is also present here, although still behind. It seems that the concepts we mentioned at the beginning are indeed anchored in the data.
 
-But this analysis overshadows a very important issue in data analysis and presentation: the great importance of data normalization.But, here I want to point out one small thing that was forgotten in the process - normalization.
+But this analysis overshadows a very important issue in data analysis and presentation: the great importance of data normalization.
 
 ## on the importance of normalization
 
@@ -150,17 +150,64 @@ So, if you agree with me that the correct measure is not "the number of chess pl
 Let's go back to data. Now we will divide all our data by the number of inhabitants of each country (and multiply by 10000 so that our own scale is more convenient) and we will get the following table:
 [Chart]
 Well, I'm sorry Iceland, but you are completely distorting the scale, so we will exclude you from the discussion (and any other country smaller than Iceland).
-[table without Iceland]
-As you can see the picture here is completely different. Suddenly the big countries disappeared and other countries emerged in their place, mainly Eastern European countries but not only. Shout out to Croatian Agdamator for being the most famous representative of Croatian chess (interested? Here is an article about chess in Croatia). Apart from Croatia, the list also stars Spain, known for their strong team (some 2-3 names), Hungary, home of Judith Folger and Richard Rapport, and of course - Norway, whose leading chess player needs no introduction (link to Magnus' photo).
+
+| Country        | Players per 1000 |
+| -------------- | ---------------- |
+| Croatia        | 88.857991        |
+| Czech Republic | 79.576901        |
+| Denmark        | 77.224312        |
+| Slovakia       | 76.828786        |
+| Slovenia       | 75.070956        |
+| Montenegro     | 75.005972        |
+| Hungary        | 69.569226        |
+| Norway         | 68.766931        |
+| Serbia         | 65.283596        |
+| Spain          | 59.827725        |
+As you can see the picture here is completely different. Suddenly the big countries disappeared and other countries emerged in their place, mainly Eastern European countries but not only. Shout out to Croatian Agadmator for being the most famous representative of Croatian chess (interested? Here is an article about chess in Croatia). Apart from Croatia, the list also stars Spain, known for their strong team (some 2-3 names), Hungary, home of Judit Polgar and Richard Rapport, and of course - Norway, whose leading chess player needs no introduction (link to Magnus' photo).
 Let's zoom out. Here is an illustration of what is happening all over the world
 [from here]
 You are welcome to scroll up a second and compare to the corresponding map before normalization. As you can see Russia has deteriorated badly not to mention the USA which is placed below almost every European country and even some countries from South America and Asia. In India the story is similar, but we will return to it later. In China, if you were wondering, the most popular competative board game is Go, so the result there is not very surprising.
 Let's quickly make the same correction to our other metrics as well:
-[Table of gms]
-[table of pros]
-[table of prodigies]
+| Country    | GMs per $10^5$ |
+| ---------- | -------------- |
+| Armenia    | 1.278615       |
+| Montenegro | 1.273987       |
+| Georgia    | 0.755908       |
+| Croatia    | 0.739046       |
+| Serbia     | 0.600947       |
+| Hungary    | 0.541314       |
+| Latvia     | 0.540881       |
+| Slovenia   | 0.529346       |
+| Israel     | 0.526735       |
+| Bulgaria   | 0.511352       |
+
+| Country    | Titled Players per $10^5$ |
+| ---------- | ------------------------- |
+| Montenegro | 10.191894                 |
+| Serbia     | 7.003338                  |
+| Slovenia   | 6.640892                  |
+| Croatia    | 6.552877                  |
+| Hungary    | 5.142481                  |
+| Armenia    | 4.609743                  |
+| Estonia    | 4.084998                  |
+| Latvia     | 3.732076                  |
+| Suriname   | 3.518584                  |
+| Georgia    | 3.451979                  |
+
+| Country        | Prodigies per $10^5$ |
+| -------------- | -------------------- |
+| Slovenia       | 1.203060             |
+| Montenegro     | 1.114738             |
+| Armenia        | 0.975785             |
+| Estonia        | 0.907777             |
+| Hungary        | 0.884840             |
+| Slovakia       | 0.879090             |
+| Czech Republic | 0.838240             |
+| Mongolia       | 0.740066             |
+| Norway         | 0.707628             |
+| Israel         | 0.661221             |
 Some key points:
-For a reason that is not clear to me, the number of GMs in Montenegro and Serbia is unusual. Although there is not a single GM in these two countries who is ranked above 2700, the top player is Alexander Fredka and he is currently ranked 49th in the world. Nevertheless, Serbia is a country of less than 7 million people and has over 50 GMs! (Here is a discussion in the case of possible causes of the phenomenon)
+For a reason that is not clear to me, the number of GMs in Montenegro and Serbia is unusual. Although there is not a single GM in these two countries who is ranked above 2700, the top player is Alexandr Predke and he is currently ranked 49th in the world. Nevertheless, Serbia is a country of less than 7 million people and has over 50 GMs! (Here is a discussion in the case of possible causes of the phenomenon)
 If in the general ranking of players Russia has fallen a little lower, in the ranking of GMs its situation is even worse.
 To summarize the discussion, I decided to combine two parameters into one plot to also examine the popularity (in the form of the overall number of players) at the same time as the degree of "success" (to be measured for that matter by the number of GMs):
 [Graph of Gms versus players]
@@ -172,58 +219,3 @@ Chess in India is growing drastically, it's no secret (here are 3 different arti
 
 In the next post I will try to continue this discussion but turn the spotlight on a well-known and age-old problem in chess - the gender gap
 
-## Tables to put above
-
-| Country | GMs per $10^5$ |
-| ---- | ---- |
-| Armenia  | 1.278615 |
-| Montenegro | 1.273987 |
-| Georgia | 0.755908 |
-| Croatia  | 0.739046 |
-| Serbia | 0.600947 |
-| Hungary | 0.541314 |
-| Latvia | 0.540881 |
-| Slovenia | 0.529346 |
-| Israel | 0.526735 |
-| Bulgaria | 0.511352 |
-
-
-| Country | Titled Players per $10^5$ |
-| ---- | ---- |
-| Montenegro | 10.191894 |
-| Serbia | 7.003338 |
-| Slovenia | 6.640892 |
-| Croatia | 6.552877 |
-| Hungary | 5.142481 |
-| Armenia | 4.609743 |
-| Estonia | 4.084998 |
-| Latvia | 3.732076 |
-| Suriname | 3.518584 |
-| Georgia | 3.451979 |
-
-| Country | Players per 1000 |
-| ---- | ---- |
-| Croatia | 88.857991 |
-| Czech Republic | 79.576901 |
-| Denmark | 77.224312 |
-| Slovakia | 76.828786 |
-| Slovenia | 75.070956 |
-| Montenegro | 75.005972 |
-| Hungary | 69.569226 |
-| Norway |  68.766931 |
-| Serbia |  65.283596 |
-| Spain |   59.827725 |
-
-
-| Country | Prodigies per |
-
-Slovenia          1.203060
-Montenegro        1.114738
-Armenia           0.975785
-Estonia           0.907777
-Hungary           0.884840
-Slovakia          0.879090
-Czech Republic    0.838240
-Mongolia          0.740066
-Norway            0.707628
-Israel            0.661221
