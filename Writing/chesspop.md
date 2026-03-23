@@ -125,20 +125,48 @@ No suprisies here - Russia at the top, US right after and the rising start India
 A little side note: I plan to write a separate post about women in  chess, so I'll keep the stats related to this topic for that future  post.
 
 Now, at last, we will present the tables nicely on a map:
-(maps)
+![Raw count maps](../Figures/raw_maps.png)
 As you can see very nicely, Russia is so dominant that it skews the scale. India is also present here, although still behind. It seems that the concepts we mentioned at the beginning are indeed anchored in the data.
 
 But this analysis overshadows a very important issue in data analysis and presentation: the great importance of data normalization.
 
 ## on the importance of normalization
 
-Let's take for example the question "Which countries have the most internet users?" 
+Let's take for example the question "Which countries have the highest GDP?"[^1]
 
-[table]
+| Ranking | Country            | GDP (millions USD) |
+| ------- | ------------------ | ------------------ |
+| 1       | United States      | 25,462,700         |
+| 2       | China              | 17,963,171         |
+| 3       | Japan              | 4,231,141          |
+| 4       | Germany            | 4,072,192          |
+| 5       | India              | 3,385,090          |
+| 6       | United Kingdom     | 3,070,668          |
+| 7       | France             | 2,782,905          |
+| 8       | Russian Federation | 2,240,422          |
+| 9       | Canada             | 2,139,840          |
+| 10      | Italy              | 2,010,432          |
 
-Probably no one will be surprised by the list. In fact, a quick glance will reveal that the list is suspiciously reminiscent of the list of "the most populated countries in the world". 
+*Source: [World Development Indicators, World Bank, July 2023](https://databankfiles.worldbank.org/public/ddpext_download/GDP.pdf)*
 
-[table]
+[^1]: The same pattern appears in many other statistics — total number of internet users, road traffic deaths, CO2 emissions — they all tend to look suspiciously like a list of the most populated countries.
+
+Probably no one will be surprised by the list. In fact, a quick glance will reveal that the list is suspiciously reminiscent of the list of "the most populated countries in the world".
+
+| Ranking | Country            | Population (thousands) |
+| ------- | ------------------ | ---------------------- |
+| 1       | India              | 1,417,173              |
+| 2       | China              | 1,412,175              |
+| 3       | United States      | 333,288                |
+| 4       | Indonesia          | 275,501                |
+| 5       | Pakistan           | 235,825                |
+| 6       | Nigeria            | 218,541                |
+| 7       | Brazil             | 215,313                |
+| 8       | Bangladesh         | 171,186                |
+| 9       | Russian Federation | 143,556                |
+| 10      | Mexico             | 127,504                |
+
+*Source: [World Development Indicators, World Bank, July 2023](https://databankfiles.worldbank.org/public/ddpext_download/POP.pdf)*
 
 This phenomenon has appeared in many places, although usually in a less exaggerated and noticeable way.![Heatmap](https://imgs.xkcd.com/comics/heatmap.png)
 
@@ -148,7 +176,7 @@ With this rather trivial insight, let's return to the question of "how many peop
 And it is very true, the correlation here between the number of residents and the number of players in the country is not perfect and not close to it, but it cannot be ignored. As in the comparison between countries, one does not look at the GDP but at the GDP per capita because it is clear that there is almost no meaning in comparing the absolute numbers between countries that differ radically in population size.
 So, if you agree with me that the correct measure is not "the number of chess players" but "the number of chess players in relation to the population" the resulting picture is very different and much more interesting.
 Let's go back to data. Now we will divide all our data by the number of inhabitants of each country (and multiply by 10000 so that our own scale is more convenient) and we will get the following table:
-[Chart]
+![Players per capita with Iceland](../Figures/players_per_capita_with_iceland.png)
 Well, I'm sorry Iceland, but you are completely distorting the scale, so we will exclude you from the discussion (and any other country smaller than Iceland).
 
 | Country        | Players per 1000 |
@@ -165,7 +193,7 @@ Well, I'm sorry Iceland, but you are completely distorting the scale, so we will
 | Spain          | 59.827725        |
 As you can see the picture here is completely different. Suddenly the big countries disappeared and other countries emerged in their place, mainly Eastern European countries but not only. Shout out to Croatian Agadmator for being the most famous representative of Croatian chess (interested? Here is an article about chess in Croatia). Apart from Croatia, the list also stars Spain, known for their strong team (some 2-3 names), Hungary, home of Judit Polgar and Richard Rapport, and of course - Norway, whose leading chess player needs no introduction (link to Magnus' photo).
 Let's zoom out. Here is an illustration of what is happening all over the world
-[from here]
+![Players per capita map](../Figures/players_per_capita_map.png)
 You are welcome to scroll up a second and compare to the corresponding map before normalization. As you can see Russia has deteriorated badly not to mention the USA which is placed below almost every European country and even some countries from South America and Asia. In India the story is similar, but we will return to it later. In China, if you were wondering, the most popular competative board game is Go, so the result there is not very surprising.
 Let's quickly make the same correction to our other metrics as well:
 | Country    | GMs per $10^5$ |
@@ -210,7 +238,7 @@ Some key points:
 For a reason that is not clear to me, the number of GMs in Montenegro and Serbia is unusual. Although there is not a single GM in these two countries who is ranked above 2700, the top player is Alexandr Predke and he is currently ranked 49th in the world. Nevertheless, Serbia is a country of less than 7 million people and has over 50 GMs! (Here is a discussion in the case of possible causes of the phenomenon)
 If in the general ranking of players Russia has fallen a little lower, in the ranking of GMs its situation is even worse.
 To summarize the discussion, I decided to combine two parameters into one plot to also examine the popularity (in the form of the overall number of players) at the same time as the degree of "success" (to be measured for that matter by the number of GMs):
-[Graph of Gms versus players]
+![GMs vs Players scatter](../Figures/gms_vs_players_scatter.png)
 
 ### Finally - India
 
