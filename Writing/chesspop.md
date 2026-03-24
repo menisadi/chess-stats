@@ -1,4 +1,15 @@
-# Chess - Popularity
+---
+title: "The Chess Capital of the World — A Basic Stats Lesson"
+tags:
+  - chess
+  - statistics
+  - data-normalization
+  - per-capita
+  - FIDE
+  - data-visualization
+---
+
+# The Chess Capital of the World — A Basic Stats Lesson
 The world of chess has experienced an increase in popularity in recent years.
 Since the broadcast of the "Queen's Gambit" series on Netflix, this ancient game has been gaining momentum online, a momentum that received an even greater boost during the COVID-19 pandemic when many remained locked in their homes and sought activities to engage with online.
 Chess provides a perfect solution as it can be played online with people from all over the world, offering an escape from the monotony of lock-down and providing a mental challenge to players.  
